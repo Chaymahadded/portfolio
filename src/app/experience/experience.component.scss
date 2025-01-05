@@ -1,0 +1,66 @@
+.experience-timeline {
+    padding: 20px;
+    background-color: #1a1a2e; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.experience-timeline h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.experience-timeline h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #94dfaa;
+    margin: 10px auto 0 auto;
+}
+
+.experience-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.experience-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 1 calc(33.33% - 20px); 
+    box-sizing: border-box; 
+    min-width: 250px;
+}
+
+.experience-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #94dfaa;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    .experience-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex: 1 1 100%;
+    }
+}

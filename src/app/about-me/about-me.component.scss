@@ -1,0 +1,118 @@
+.about { 
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.about h2,
+.about h3 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about h2::after,
+.about h3::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #94dfaa;
+    margin: 10px auto 0 auto;
+}
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.tech-icon {
+    text-align: center;
+    width: 100px;
+    color: #94dfaa;
+}
+
+.tech-icon p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.custom-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.spring-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/spring-boot-svgrepo-com.svg'); 
+}
+.cSharp-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/csharp-svgrepo-com.svg'); 
+}
+.sqlServe-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/sql-database-sql-azure-svgrepo-com.svg'); 
+}
+.mySql-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/mysql-svgrepo-com.svg'); 
+}
+.xampp-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/xampp-svgrepo-com.svg'); 
+}
+.postman-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/postman-icon-svgrepo-com.svg'); 
+}
+.azure-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/azure-devops-svgrepo-com.svg'); 
+}
+.intellij-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/jb-intellij-idea-svgrepo-com.svg'); 
+}
+.eclipse-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/eclipse-svgrepo-com.svg'); 
+}
+.vscode-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/vscode-fill-svgrepo-com.svg'); 
+}
+
+
+@media (max-width: 768px) {
+    .about h2,
+    .about h3 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2,
+    .about h3 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}

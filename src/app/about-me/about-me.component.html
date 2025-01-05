@@ -1,0 +1,25 @@
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    As a student with a passion for software engineering and business intelligence, I'd like to put my 
+    technical skills and my constant thirst for knowledge to contribute to the development of innovative
+    and offer high-performance solutions in this field.
+  </p>
+  <h3>Skills</h3>
+  <div class="tech-stack">
+    <div *ngFor="let tech of techIcons" class="tech-icon">
+      <fa-icon *ngIf="tech.icon" [icon]="tech.icon" size="3x"></fa-icon>
+      <div *ngIf="!tech.icon" class="custom-icon" [class]="tech.iconClass"></div>
+      <p>{{ tech.name }}</p>
+    </div>
+  </div>
+
+  <h3>Tools I use</h3>
+  <div class="tech-stack">
+    <div *ngFor="let tech of ToolsIcons" class="tech-icon">
+      <fa-icon *ngIf="tech.icon" [icon]="tech.icon" size="3x"></fa-icon>
+      <div *ngIf="!tech.icon" class="custom-icon" [class]="tech.iconClass"></div>
+      <p>{{ tech.name }}</p>
+    </div>
+  </div>
+</section>

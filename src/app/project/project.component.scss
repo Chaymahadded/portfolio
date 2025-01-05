@@ -1,0 +1,161 @@
+.project-section {
+    padding: 40px;
+    background-color: #1a1a2e;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      position: relative;
+      display: inline-block;
+      color: white;
+    }
+  
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #94dfaa;
+      margin: 10px auto 0 auto;
+    }
+  
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    .project-card {
+      flex: 1 1 calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+      display: flex;
+    }
+  
+    .project-card-view {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      width: 100%;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      .card-img-top {
+        width: 90%;
+        height: 200px;
+        margin-top: 10px;
+        object-fit: scale-down;
+      }
+  
+      .card-title {
+        color: #0f0f20;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+  
+      .card-body {
+        padding: 20px;
+  
+        .card-text {
+          color: #555;
+          font-size: 0.95rem;
+          margin-bottom: 15px;
+          height: 250px;
+          overflow: hidden;
+        }
+  
+        .btn-custom {
+          background-color: #94dfaa;
+          border: none;
+          color: #555;
+          font-weight: bold;
+          padding: 8px 12px;
+          font-size: 0.9rem;
+          border-radius: 5px;
+          transition: background 0.3s ease;
+  
+          &:hover {
+            background-color: darken(#94dfaa, 10%);
+          }
+        }
+  
+        .demo-btn {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  
+  .demo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
+      max-width: 800px;
+  
+      h3 {
+        margin-bottom: 20px;
+      }
+  
+      video {
+        width: 100%;
+        max-height: 400px;
+        border-radius: 5px;
+      }
+  
+      .close-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #94dfaa;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: darken(#94dfaa, 10%);
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .project-card {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .demo-modal .modal-content {
+      width: 95%;
+    }
+  }
