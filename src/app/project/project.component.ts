@@ -127,7 +127,7 @@ export class ProjectComponent {
         '../../assets/images/demo/pfeLicence/intertest.png',
         '../../assets/images/demo/pfeLicence/choix_image.png',
         '../../assets/images/demo/pfeLicence/inter_testé.png',
-        '../../assets/images/demo/pfeLicence/modele.png',
+        '../../assets/images/demo/pfeLicence/modele.PNG',
       ],
       demoType : 'gallery',
     },
