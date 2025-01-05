@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { Gallery, GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [CommonModule, GalleryModule, NgxGalleryModule],
+  imports: [CommonModule, GalleryModule],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
