@@ -84,24 +84,35 @@
 }
 
 @media (max-width: 480px) {
+  .introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
   .intro-text h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .intro-text h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .intro-text h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .intro-image img {
-    width: 120px;
+    width: 100px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .btn-download {
     font-size: 0.8rem;
-    padding: 6px 12px;
+    padding: 5px 10px;
+    margin-top: 15px;
   }
 }
