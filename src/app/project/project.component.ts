@@ -61,7 +61,7 @@ export class ProjectComponent {
         '../../../assets/images/demo/GestionFlotte/register.png',
         '../../../assets/images/demo/GestionFlotte/changepassword.png',
         '../../../assets/images/demo/GestionFlotte/vehicle_file_report.PNG',
-        '../../../assets/images/demo/GestionFlotte/addVehicle.png',
+        '../../../assets/images/demo/GestionFlotte/addVehicle.PNG',
         '../../../assets/images/demo/GestionFlotte/list_vehicle_report.PNG',
         '../../../assets/images/demo/GestionFlotte/modify_vehicle.PNG',
         '../../../assets/images/demo/GestionFlotte/assurance.png',

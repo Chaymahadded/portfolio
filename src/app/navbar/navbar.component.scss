@@ -1,67 +1,88 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0; /* S'assure que la navbar commence à gauche */
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background: #0f0f20;
-    z-index: 1000; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0f0f20;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #94dfaa;
+  font-weight: bold;
+}
+
+.header .navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .navbar a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Lien actif */
+.header .navbar a.active {
+  color: #94dfaa;
+  font-weight: bold;
+  border-bottom: 2px solid #94dfaa;
+}
+
+/* Effet au survol */
+.header .navbar a:hover {
+  color: #94dfaa;
+  transform: scale(1.1);
+}
+
+/* Responsive - Tablettes */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
   }
-  
+
   .header .logo {
-    font-size: 24px;
-    color: #94dfaa;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
-  
+
   .header .navbar {
-    display: flex;
+    justify-content: center;
   }
-  
+
   .header .navbar a {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 5px 15px;
+    font-size: 14px;
   }
-  
-  /* Lien actif */
-  .header .navbar a.active {
-    color: #94dfaa;
-    font-weight: bold;
-    border-bottom: 2px solid #94dfaa;
+}
+
+/* Responsive - Smartphones */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
   }
-  
-  /* Effet au survol */
-  .header .navbar a:hover {
-    color: #94dfaa;
-    transform: scale(1.1);
+
+  .header .logo {
+    font-size: 18px;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      padding: 10px 0; /* Réduire le padding pour petits écrans */
-    }
-  
-    .header .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header .navbar a {
-      margin: 5px 0;
-    }
+
+  .header .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 480px) {
-    .header .logo {
-      font-size: 20px;
-    }
+
+  .header .navbar a {
+    margin: 8px 0;
+    font-size: 14px;
   }
-  
+}
