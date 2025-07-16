@@ -93,6 +93,28 @@
     margin: auto;
     content: url('../../assets/images/svg/vscode-fill-svgrepo-com.svg'); 
 }
+.wireshark-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  content: url('../../assets/images/svg/wireshark-svgrepo-com.svg');
+  filter: invert(69%) sepia(13%) saturate(601%) hue-rotate(84deg) brightness(95%) contrast(92%);
+}
+
+.fastapi-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/fastapi-svgrepo-com.svg'); 
+}
+.keycloak-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/keycloak-svgrepo-com.svg'); 
+}
+.ts-icon {
+    margin: auto;
+    content: url('../../assets/images/svg/logo-ts-svgrepo-com.svg'); 
+}
+
 
 
 @media (max-width: 768px) {

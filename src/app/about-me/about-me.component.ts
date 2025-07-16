@@ -10,7 +10,9 @@ import {
   faDocker,
   faFlutter,
   faAndroid,
+  faReact,
 } from '@fortawesome/free-brands-svg-icons';
+import { faFastBackward } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about-me',
@@ -21,15 +23,20 @@ import {
 })
 export class AboutMeComponent {
   techIcons = [
-    { icon: faJsSquare, name: 'JavaScript' },
+    
     { icon: faJava, name: 'Java' },
     { icon: faPython, name: 'Python' },
     { icon: null, name: 'C#', iconClass: 'cSharp-icon' },
+    { icon: faJsSquare, name: 'JavaScript' },
+    { icon: null, name: 'TypeScript', iconClass: 'ts-icon' },
     { icon: null, name: 'Spring Boot', iconClass: 'spring-icon' },
     { icon: faAngular, name: 'Angular' },
+    { icon: faReact, name: 'React' },
+    { icon: null, name: 'FastAPI', iconClass: 'fastapi-icon' },
     { icon: faFlutter, name: 'Flutter' },
     { icon: faGitAlt, name: 'Git' },
     { icon: faDocker, name: 'Docker' },
+    { icon: null, name: 'Keycloak' ,iconClass: 'keycloak-icon' },
     { icon: null, name: 'MySQL' ,iconClass: 'mySql-icon' },
     { icon: null, name: 'SQL Server' , iconClass: 'sqlServe-icon' },
   ];
@@ -42,5 +49,6 @@ export class AboutMeComponent {
     { icon: null, name: 'Miscrosoft Azure Devops', iconClass: 'azure-icon' },
     { icon: null, name: 'Postman' , iconClass: 'postman-icon' },
     { icon: null, name: 'Xampp' , iconClass: 'xampp-icon' },
+    { icon: null, name: 'Wireshark' ,iconClass: 'wireshark-icon' },  
   ];
 }

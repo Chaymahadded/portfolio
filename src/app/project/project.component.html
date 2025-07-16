@@ -7,6 +7,7 @@
                 <img class="card-img-top" [src]="project.imgPath" [alt]="project.title" />
                 <div class="card-body">
                     <p class="card-text">{{ project.description }}</p>
+                    <!--
                     <a *ngIf="project.ghLink" class="btn btn-custom" [href]="project.ghLink" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-github" viewBox="0 0 16 16">
@@ -15,6 +16,7 @@
                         </svg>
                         GitHub
                     </a>
+                    -->
                     <button *ngIf="project.demoAssets.length" class="btn btn-custom demo-btn"
                         (click)="openDemoModal(project)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
